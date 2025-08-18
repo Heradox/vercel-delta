@@ -142,17 +142,25 @@ export default function VidaEscolarPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-[#231F20]/60 to-[#231F20]/50 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-white/20 text-white mb-4">Vida Escolar</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">Formación Integral Más Allá del Aula</h1>
-            <p className="text-xl md:text-2xl opacity-90">
-              Descubre el mundo de oportunidades que complementan la educación académica de nuestras estudiantes
-            </p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative py-20 bg-cover bg-center bg-no-repeat text-white"
+  style={{ backgroundImage: "url('/images/header-extra.webp')" }} // 🔹 Cambia la ruta
+>
+  {/* Overlay con gradiente encima de la imagen */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#231F20]/60 to-[#231F20]/50" />
+
+  <div className="relative container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <Badge className="bg-white/20 text-white mb-4">Vida Escolar</Badge>
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
+        Formación Integral Más Allá del Aula
+      </h1>
+      <p className="text-xl md:text-2xl opacity-90">
+        Descubre el mundo de oportunidades que complementan la educación académica de nuestras estudiantes
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Introducción */}
       <section className="py-16">
@@ -186,7 +194,7 @@ export default function VidaEscolarPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/actividades-extracurriculares.webp"
                 alt="Vida Escolar Delta"
                 width={600}
                 height={500}
@@ -255,7 +263,7 @@ export default function VidaEscolarPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="images/club-deportivo-vida-escolar.webp"
+                src="images/copa-delta.webp"
                 alt="Copa Delta"
                 width={600}
                 height={500}
