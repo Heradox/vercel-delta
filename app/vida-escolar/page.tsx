@@ -194,7 +194,7 @@ export default function VidaEscolarPage() {
             </div>
             <div className="relative">
               <Image
-                src="/actividades-extracurriculares.webp"
+                src="images/actividades-extracurriculares.webp"
                 alt="Vida Escolar Delta"
                 width={600}
                 height={500}
