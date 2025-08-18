@@ -97,19 +97,23 @@ export default function ServiciosPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-[#231F20]/50 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-white/20 text-white mb-4">Servicios</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
-              Servicios Integrales para tu Tranquilidad
-            </h1>
-            <p className="text-xl md:text-2xl opacity-90">
-              Ofrecemos servicios complementarios que facilitan la vida escolar y brindan seguridad a las familias
-            </p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative py-20 bg-[#231F20]/50 text-white bg-cover bg-center"
+  style={{ backgroundImage: "url('/images/coro-frances.webp')" }}
+>
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <Badge className="bg-white/20 text-white mb-4">Servicios</Badge>
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
+        Servicios Integrales para tu Tranquilidad
+      </h1>
+      <p className="text-xl md:text-2xl opacity-90">
+        Ofrecemos servicios complementarios que facilitan la vida escolar y brindan seguridad a las familias
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Servicios Principales */}
       <section className="py-16">
