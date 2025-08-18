@@ -24,18 +24,27 @@ export default function ContactoPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-[#231F20]/60 to-[#231F20]/50 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge className="bg-white/20 text-white mb-4 text-sm">Contacto</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">Estamos aquí para ayudarte</h1>
-            <p className="text-xl md:text-2xl opacity-90 mb-8">
-              Contáctanos para conocer más sobre nuestra propuesta educativa y cómo podemos acompañar el crecimiento de
-              tu hija
-            </p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative py-20 bg-cover bg-center bg-no-repeat text-white"
+  style={{ backgroundImage: "url('/images/banner-contacto.webp')" }} // 🔹 cambia por tu imagen en /public/images
+>
+  {/* Overlay degradado encima de la imagen */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#231F20]/60 to-[#231F20]/50" />
+
+  {/* Contenido */}
+  <div className="relative container mx-auto px-4">
+    <div className="text-center max-w-4xl mx-auto">
+      <Badge className="bg-white/20 text-white mb-4 text-sm">Contacto</Badge>
+      <h1 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
+        Estamos aquí para ayudarte
+      </h1>
+      <p className="text-xl md:text-2xl opacity-90 mb-8">
+        Contáctanos para conocer más sobre nuestra propuesta educativa y cómo podemos acompañar el crecimiento de tu hija
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Information Cards */}
       <section className="py-16 bg-gray-50">
@@ -85,7 +94,7 @@ export default function ContactoPage() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <div className="w-16 h-16 bg-[#25D366]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#25D366]/80 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Image src="/images/whatsapp.png" alt="WhatsApp" width={32} height={32} />
                 </div>
                 <h3 className="font-bold text-[#231F20] mb-2">WhatsApp</h3>
