@@ -35,31 +35,47 @@ export default function AdmisionesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-[#231F20]/50 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-white/20 text-white mb-4">Admisiones</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">Tu hija merece la mejor educación</h1>
-            <p className="text-xl md:text-2xl opacity-90 mb-8">
-              Descubre cómo el Colegio Delta puede transformar el futuro de tu hija con una educación de excelencia
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#25D366] hover:bg-[#25D366]/90">
-                <Image src="/images/whatsapp.png" alt="WhatsApp" width={20} height={20} className="mr-2" />
-                WhatsApp
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#AB121C] bg-transparent"
-              >
-                <Calendar className="mr-2 h-5 w-5" />
-                Agendar Visita
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative py-20 bg-cover bg-center bg-no-repeat text-white"
+  style={{ backgroundImage: "url('/images/header-admisiones.webp')" }} // 🔹 cambia por tu ruta
+>
+  {/* Overlay oscuro encima de la imagen */}
+  <div className="absolute inset-0 bg-[#231F20]/50" />
+
+  {/* Contenido */}
+  <div className="relative container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <Badge className="bg-white/20 text-white mb-4">Admisiones</Badge>
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
+        Tu hija merece la mejor educación
+      </h1>
+      <p className="text-xl md:text-2xl opacity-90 mb-8">
+        Descubre cómo el Colegio Delta puede transformar el futuro de tu hija con una educación de excelencia
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button size="lg" className="bg-[#25D366] hover:bg-[#25D366]/90">
+          <Image
+            src="/images/whatsapp.png"
+            alt="WhatsApp"
+            width={20}
+            height={20}
+            className="mr-2"
+          />
+          WhatsApp
+        </Button>
+        <Button
+          size="lg"
+          variant="outline"
+          className="border-white text-white hover:bg-white hover:text-[#AB121C] bg-transparent"
+        >
+          <Calendar className="mr-2 h-5 w-5" />
+          Agendar Visita
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Por qué Delta */}
       <section className="py-16">

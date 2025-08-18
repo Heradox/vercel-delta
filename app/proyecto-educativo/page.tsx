@@ -104,18 +104,26 @@ export default function ProyectoEducativoPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-[#231F20]/60 to-[#231F20]/50 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-white/20 text-white mb-4">Proyecto Educativo</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">Formación Académica y Humana Integral</h1>
-            <p className="text-xl md:text-2xl opacity-90">
-              Nuestro proyecto educativo desarrolla todas las dimensiones de la persona humana con excelencia y valores
-            </p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative py-20 bg-cover bg-center bg-no-repeat text-white"
+  style={{ backgroundImage: "url('/images/header-proyecto.webp')" }} // 🔹 Cambia por tu ruta
+>
+  {/* Overlay gradiente oscuro */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#231F20]/60 to-[#231F20]/50" />
 
+  {/* Contenido */}
+  <div className="relative container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <Badge className="bg-white/20 text-white mb-4">Proyecto Educativo</Badge>
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">
+        Formación Académica y Humana Integral
+      </h1>
+      <p className="text-xl md:text-2xl opacity-90">
+        Nuestro proyecto educativo desarrolla todas las dimensiones de la persona humana con excelencia y valores
+      </p>
+    </div>
+  </div>
+</section>
       {/* Enfoque Formativo */}
       <section className="py-16">
         <div className="container mx-auto px-4">
