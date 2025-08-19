@@ -322,7 +322,7 @@ export default function VidaEscolarPage() {
                 descripcion: "Celebrando los logros de nuestras estudiantes",
               },
               {
-                imagen: "images/feria-de-ciencias",
+                imagen: "images/feria-de-ciencias.webp",
                 titulo: "Feria de Ciencias",
                 descripcion: "Innovación y creatividad en acción",
               },
