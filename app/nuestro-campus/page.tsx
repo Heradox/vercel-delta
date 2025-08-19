@@ -30,37 +30,37 @@ export default function NuestroCampusPage() {
       nombre: "Aulas Interactivas",
       descripcion: "Espacios modernos equipados con tecnología de vanguardia",
       icono: BookOpen,
-      imagen: "/placeholder.svg?height=300&width=400",
+      imagen: "images/interactivas.webp",
     },
     {
       nombre: "Laboratorio STEM",
       descripcion: "Ciencia, tecnología, ingeniería y matemáticas en acción",
       icono: Microscope,
-      imagen: "/placeholder.svg?height=300&width=400",
+      imagen: "images/stem.webp",
     },
     {
       nombre: "Aula de Arte",
       descripcion: "Creatividad y expresión artística sin límites",
       icono: Camera,
-      imagen: "/placeholder.svg?height=300&width=400",
+      imagen: "images/aula-de-arte.webp",
     },
     {
       nombre: "Sala de Música",
       descripcion: "Desarrollo del talento musical y apreciación artística",
       icono: Music,
-      imagen: "/placeholder.svg?height=300&width=400",
+      imagen: "images/musica.webp",
     },
     {
       nombre: "Centro de Tecnología",
       descripcion: "Innovación digital y programación",
       icono: Building,
-      imagen: "/placeholder.svg?height=300&width=400",
+      imagen: "images/centro-tecnologia.webp",
     },
     {
       nombre: "Biblioteca",
       descripcion: "Centro de recursos para la investigación y el aprendizaje",
       icono: BookOpen,
-      imagen: "/placeholder.svg?height=300&width=400",
+      imagen: "images/biblioteca.webp",
     },
   ]
 
