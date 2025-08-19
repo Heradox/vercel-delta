@@ -194,7 +194,7 @@ export default function VidaEscolarPage() {
             </div>
             <div className="relative">
               <Image
-                src="images/actividades-extracurriculares.webp"
+                src="images\actividades-extracurriculares.webp"
                 alt="Vida Escolar Delta"
                 width={600}
                 height={500}
@@ -317,32 +317,32 @@ export default function VidaEscolarPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                imagen: "/placeholder.svg?height=300&width=400",
+                imagen: "images/graduacion.webp",
                 titulo: "Ceremonia de Graduación",
                 descripcion: "Celebrando los logros de nuestras estudiantes",
               },
               {
-                imagen: "/placeholder.svg?height=300&width=400",
+                imagen: "images/feria-de-ciencias",
                 titulo: "Feria de Ciencias",
                 descripcion: "Innovación y creatividad en acción",
               },
               {
-                imagen: "/placeholder.svg?height=300&width=400",
+                imagen: "images/festival-cultural.webp",
                 titulo: "Festival Cultural",
                 descripcion: "Celebrando la diversidad y las tradiciones",
               },
               {
-                imagen: "/placeholder.svg?height=300&width=400",
+                imagen: "images/dia-deportivo.webp",
                 titulo: "Día Deportivo",
                 descripcion: "Competencia sana y espíritu de equipo",
               },
               {
-                imagen: "/placeholder.svg?height=300&width=400",
+                imagen: "images/galeria-de-arte.webp",
                 titulo: "Exposición de Arte",
                 descripcion: "Expresión creativa de nuestras artistas",
               },
               {
-                imagen: "/placeholder.svg?height=300&width=400",
+                imagen: "images/servicio-proyecto.webp",
                 titulo: "Proyecto de Servicio",
                 descripcion: "Compromiso social en acción",
               },
